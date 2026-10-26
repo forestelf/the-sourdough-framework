@@ -724,6 +724,24 @@ is equal to your ambient temperature. Else the sample heats
 up or cools down faster. So tread carefully when using
 the sample in this case. It's always better to stop
 the fermentation a little too early rather than too late.
+
+If you are not relying on an ambient-temperature aliquot sample and instead
+want to cool your initial dough down to around \qty{24}{\degreeCelsius}
+(\qty{75}{\degF}) when your tap water is warm, you can replace part of the
+water with crushed ice. Melting \qty{1}{\gram} of ice at
+\qty{0}{\degreeCelsius} absorbs as much heat as warming \qty{1}{\gram} of
+liquid water by \qty{80}{\degreeCelsius} (the latent heat of fusion of ice,
+334~J per gram). To cool a total water weight $W_{\mathrm{water}}$ from your
+tap water temperature $T_{\mathrm{tap}}$ down to a target water temperature
+$T_{\mathrm{target}}$ (in degrees Celsius), the weight of crushed ice to use
+is~\cite{sourdoughcalc+ice+ddt}:
+
+\[
+W_{\mathrm{ice}} = W_{\mathrm{water}} \times \frac{T_{\mathrm{tap}} - T_{\mathrm{target}}}{T_{\mathrm{tap}} + 80}
+\]
+
+Subtract $W_{\mathrm{ice}}$ from your total water weight to get the remaining
+liquid tap water, and crush the ice finely so it melts completely during mixing.
 Stretch and folds during the bulk fermentation
 will help you to develop a better feel for
 the dough. An expensive but possibly useful tool
